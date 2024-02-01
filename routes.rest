@@ -1,8 +1,22 @@
-### get tooele tech route
+//Localhost method requests
+###
+Get http://localhost:10000/ HTTP/1.1
+###
 GET http://localhost:10000/ttech HTTP/1.1
 
-###get the root path /
-Get http://localhost:10000/ HTTP/1.1
+### GET ONE STUDENT
+Get http://localhost:10000/students/65bbf56f70f60c502fa6f4c9 HTTP/1.1
+### GET ALL STUDENTS
+Get http://localhost:10000/students HTTP/1.1
 
-### get all students
-Get http://localhost:10000/students
+### POST ONE STUDENT
+POST http://localhost:100000/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Phil",
+    "lastName": "Reeves",
+    "email": "reeves.phil@email.com",
+    "age": 34,
+    "currentCollege": "Code Academy"
+}
