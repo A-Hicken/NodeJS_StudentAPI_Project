@@ -87,7 +87,7 @@ const updateStudent = async (req, res) => {
       .db()
       .collection("Students")
       .replaceOne({ _id: userId }, student);
-    if (response.acknowleged) {
+    if (!response.acknowleged) {
       res.status(204).json(repsonse);
     } else {
       res
