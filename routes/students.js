@@ -9,8 +9,8 @@ router.get("/:id", StudentController.getSingleStudent);
 
 router.post("/", StudentController.createStudent);
 
-router.patch("/editstudent", StudentController.updateStudent);
+router.patch("/editstudent/:id", StudentController.updateStudent);
 
-router.delete("/delete", StudentController.deleteStudent);
+router.delete("/delete/:id", StudentController.deleteStudent);
 
 module.exports = router;
