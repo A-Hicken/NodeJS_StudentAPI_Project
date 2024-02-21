@@ -18,10 +18,6 @@ const StudentSchema = new Schema({
     type: Number,
     required: true,
   },
-  major: {
-    type: String,
-    required: true,
-  },
   currentCollege: {
     type: String,
     required: true,
